@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Include your CSS file -->
+    <link rel="icon" href="/Assets/images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <div class="lms-logo">
+                <img src="/Assets/images/logo.jpg" alt="logo">
+            </div>
+            <h1>Welcome to Your Dashboard</h1>
+            <i class='bx bxs-bell'></i>
+        </div>
+    </header>
+    <div class="container"> 
+      <div class="nav-container">
+        <nav>
+            <ul>
+              <li><a href="./my_learning.html" data-target="content-my-learning">
+                <i class='bx bx-chalkboard'></i>
+                <span class="nav-item">My Learning</span>
+              </a></li>
+              <li><a href="/course-content.html" data-target="content-available-courses">
+                <i class='bx bx-code-block'></i>
+                <span class="nav-item">Available Courses</span>
+              </a></li>
+              <li><a href="#" data-target="content-dashboard">
+                <i class='bx bxs-dashboard'></i>
+                <span class="nav-item">Dashboard</span>
+              </a></li>
+              <li><a href="#" data-target="content-leaderboard">
+                <i class='bx bxs-spreadsheet'></i>
+                <span class="nav-item">Leaderboard</span>
+              </a></li>
+              <li><a href="#" data-target="content-my-profile">
+                <i class='bx bx-user'></i>
+                <span class="nav-item">My Profile</span>
+              </a></li>
+              <li><a href="#" data-target="content-assignment-submission">
+                <i class='bx bx-book-reader'></i>
+                <span class="nav-item">Assignment Submission</span>
+              </a></li>
+              <li><a href="#" data-target="content-calendar">
+                <i class='bx bxs-calendar'></i>
+                <span class="nav-item">Calendar</span></a></li>
+              <li><a href="#" data-target="content-help">
+                <i class='bx bx-help-circle'></i>
+                <span class="nav-item">Help</span></a></li>
+              <li><a href="#" data-target="content-log-out">
+                <i class='bx bx-log-out bx-flip-horizontal'></i>
+                <span class="nav-item">Log Out</span></a></li>
+            </ul>
+          </nav>
+      </div>
+    
+        <section class="main">
+            <div class="main-hello">
+              <h2>Hello, <span id="user-fullname"></span>!</h2>
+              <p>Welcome to your personalized dashboard.</p>
+            </div>
+            <div class="profile-container">
+              <div class="profile-header">
+                  <div class="profile-image">
+                      <img src="/Assets/images/profile.jpg" alt="Profile Image">
+                  </div>
+                  <div class="profile-info">
+                      <h2>Adams Yeswa</h2>
+                      <p><i class='bx bxs-map'></i> Kenya</p>
+                      <p><i class='bx bxs-envelope'></i> yeswaadams73@gmail.com</p>
+                      <p><i class='bx bxs-user'></i> Male</p>
+                  </div>
+              </div>
+              <div class="profile-stats">
+                  <div class="stat">
+                      <i class='bx bxs-book'></i>
+                      <h3>Enrolled Modules</h3>
+                      <p>6</p>
+                  </div>
+                  <div class="stat">
+                      <i class='bx bxs-briefcase'></i>
+                      <h3>Completed Modules</h3>
+                      <p>6</p>
+                  </div>
+                  <div class="stat">
+                      <i class='bx bxs-badge'></i>
+                      <h3>Badges</h3>
+                      <p>0</p>
+                  </div>
+              </div>
+          </div>
+          <div class="dashboard">
+            <section class="modules">
+                <h2>Enrolled Modules</h2>
+                <div class="module-cards">
+                    <div class="module-card">
+                        <img src="/Assets/images/webtech.png" alt="Web Technologies">
+                        <h3>Web Development</h3>
+                        <p>100.00% Complete</p>
+                        <button>Study</button>
+                    </div>
+                    <div class="module-card">
+                        <img src="/Assets/images/python.jpg" alt="Python Programming">
+                        <h3>Python</h3>
+                        <p>100.00% Complete</p>
+                        <button>Study</button>
+                    </div>
+                    <div class="module-card">
+                        <img src="/Assets/images/mysqlt.jfif" alt="Database">
+                        <h3>Database Design</h3>
+                        <p>100.00% Complete</p>
+                        <button>Study</button>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+          
+    <footer>
+        <p>&copy; 2024 Your LMS</p>
+    </footer>
+  </section>
+  
+    <!-- Include your client-side JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

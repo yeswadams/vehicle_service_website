@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management App</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/Assets/images/logo.jpg" type="image/x-icon">
+    <style>
+        .container {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+  <!--register-form-->
+  <div class="Login-Page" id="Login-Page">
+    <h1>Learning Management App</h1>
+    <div class="container active" id="signup-form">
+        <form class="form" id="register-form">
+          <h2>Sign Up</h2>
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="Password" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="full_name" placeholder="Full Name" required>
+          <input class="login-button" type="submit" value="Create My Account">
+          <p class="own_account">Already have an account?<a href="#" onclick="showLoginForm(); return false;"> Sign In here</a></p>
+        </form>
+    </div>
+ <!--login-form-->
+    <div class="container" id="login-form">
+        <div class="heading">Sign In</div>
+        <p class="welcome">Welcome back to our E-learning Platform</p>
+        <form action="" class="form">
+          <input required="" class="input" type="email" name="email" id="email" placeholder="E-mail">
+          <input required="" class="input" type="password" name="password" id="password" placeholder="Password">
+          <span class="forgot-password"><a href="#">Forgot Password?</a></span>
+          <p class="own_account">Don't have an account?<a href="#" onclick="showSignupForm(); return false;"> Create here</a></p>
+          <a href="/dashboard.html">
+            <input class="login-button" type="submit" value="Sign In">
+          </a>
+        </form>
+    </div>  
+    <div class="container" id="login-form">  
+        <form id="logout-form" class="form">
+            <input class="login-button" type="submit" value="Log Out">
+        </form>
+    </div>       
+        <script>
+            function showSignupForm() {
+                document.getElementById('signup-form').classList.add('active');
+                document.getElementById('login-form').classList.remove('active');
+            }
+    
+            function showLoginForm() {
+                document.getElementById('login-form').classList.add('active');
+                document.getElementById('signup-form').classList.remove('active');
+            }
+        </script>
+    <script src="script.js"></script>
+    <script src="/server.js"></script>
+</div>    
+</body>
+</html>
